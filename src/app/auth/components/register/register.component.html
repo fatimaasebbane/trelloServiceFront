@@ -1,0 +1,40 @@
+<div class="background-left"></div>
+<div class="background-right"></div>
+
+<div class="register-container">
+  <div class="logo-container">
+    <img src="assets/images/logo.webp" alt="Logo de l'application" class="app-logo">
+  </div>
+
+  <h1>Inscription</h1>
+
+  <form (ngSubmit)="submitEmail()" #registerForm="ngForm">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        [(ngModel)]="email"
+        placeholder="Entrez votre email"
+      />
+    </div>
+
+    <button type="submit" class="btn-submit">S'inscrire</button>
+
+    <div class="social-login">
+      <p>Ou inscrivez-vous avec :</p>
+      <button (click)="connectWithLinkedIn()" class="social-button linkedin-button">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </button>
+      <button (click)="connectWithGoogle()" class="social-button google-button">
+        <i class="fab fa-google"></i> Google
+      </button>
+    </div>
+
+    <div class="login-link">
+      <p>Déjà inscrit ? <a routerLink="/login">Connectez-vous ici</a></p>
+    </div>
+  </form>
+</div>

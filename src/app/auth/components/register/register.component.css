@@ -1,0 +1,125 @@
+.register-container {
+  position: relative;
+  max-width: 450px;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 25px;
+  background-color: #FFFFFF; /* Changez le fond si nécessaire */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-logo {
+  max-width: 100px;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #007198; /* Changement de couleur du titre */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #003C57; /* Couleur des labels */
+}
+
+input[type="email"] {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #007198; /* Changement de couleur de la bordure */
+  border-radius: 4px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #036a96; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #04BBFF; /* Couleur du bouton au survol */
+}
+
+.social-login {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.social-button {
+  background-color: #007198; /* Couleur de fond des boutons sociaux */
+  color: white; /* Couleur du texte */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.social-button i {
+  margin-right: 8px;
+}
+
+.linkedin-button {
+  background-color: #2a8cc0; /* Gardez le blanc pour les boutons sociaux */
+  color: white;
+}
+
+.google-button {
+  background-color: #DB4437; /* Gardez le blanc pour les boutons sociaux */
+  color: white;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-link a {
+  color: #007198; /* Changement de couleur des liens de connexion */
+  text-decoration: underline;
+}
+
+body {
+  background-color: #FEF9DC; /* Changez la couleur de fond si nécessaire */
+}
+
+.background-left,
+.background-right {
+  position: fixed;
+  bottom: -40%;
+  width: 400px;
+  height: 450px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.background-left {
+  left: 0;
+  background-image: url('/assets/images/equipe_projet.png');
+}
+
+.background-right {
+  right: 0;
+  background-image: url('/assets/images/equipe_projet.png');
+}
